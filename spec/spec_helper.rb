@@ -21,5 +21,4 @@ DB2Fog.config = {
   :directory  => 'db2fog-test'
 }
 
-ActiveRecord::Base.configurations = { 'production' => DBConfig }
-ActiveRecord::Base.establish_connection(:production)
+ActiveRecord::Base.establish_connection(DBConfig)
